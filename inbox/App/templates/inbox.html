@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+<!-- Block Image  -->
+{% block image %}
+
+{% endblock image %}
+
+<!-- page content -->
+{% block contenido %}
+    <div class="text-danger text-center mt-5">FRONT END</div>
+{% endblock  %}
+
+<!-- side bar content -->
+
+{% block sidebar-content %}
+    <!-- Welcome user  -->
+    <center>
+    Welcome: <span class="text-success">{{user.get_username}}</span>
+    <br>
+    </center>   
+    <br>
+    <a href="{% url 'logout' %}" class="btn btn-danger">Logout</a>
+
+{% endblock sidebar-content %}
+
